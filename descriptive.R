@@ -67,3 +67,25 @@ hist(diabetes$TIEMPO_DM, col="#39CCCC", main="", xlab="Años diagnostico", ylab="
 
 hist(diabetes$PESO, col="#39CCCC", main="", xlab="Peso en kilogramos", ylab="Frecuencia")
 
+hist(diabetes$TALLA, col="#39CCCC", main="", xlab="Talla en metros", ylab="Frecuencia")
+
+hist(diabetes$IMC, col="#39CCCC", main="", xlab="Indice Masa Corporal", ylab="Frecuencia")
+
+
+boxplot(diabetes$IMC, las =2)
+
+height <- c(176, 154, 138, 196, 132, 176, 181, 169, 150, 175)
+bodymass <- c(82, 49, 53, 112, 47, 69, 77, 71, 62, 78)
+
+plot(bodymass, height, pch = 16, cex = 1.3, col = "blue", main = "HEIGHT PLOTTED AGAINST BODY MASS", xlab = "BODY MASS (kg)", ylab = "HEIGHT (cm)")
+
+
+head(diabetes)
+s <- subset(diabetes, select=c("TIEMPO_DM", "EDAD"))
+pairs(s)
+
+
+
+
+
+
