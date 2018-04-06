@@ -1,4 +1,6 @@
 #windows 
+#https://portal.uah.es/portal/page/portal/epd2_asignaturas/asig202218/informacion_academica/2-Modelos%20lineales.pdf
+
 install.packages("reshape")
 library(reshape)
 
